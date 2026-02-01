@@ -25,11 +25,36 @@ resources/       # Learning resources
 ## Quick Start
 
 ```bash
-# Sync Python environment
+# 1. Setup environment (installs uv if needed)
+make setup
+
+# 2. Download all papers (~90MB)
+make papers
+
+# 3. Start learning from Phase 1!
+```
+
+### Manual Setup
+
+If you prefer not to use Make:
+
+```bash
+# Install uv (if not installed)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Sync dependencies
 uv sync
 
-# Run tests
-uv run pytest
+# Download papers
+./scripts/download_papers.sh
+```
+
+### Other Commands
+
+```bash
+make lint    # Run ruff linter and formatter
+make test    # Run pytest
+make clean   # Remove generated files
 ```
 
 ## Papers
