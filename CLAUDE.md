@@ -13,7 +13,7 @@ A multi-topic ML/AI research and learning repository. Each topic is organized as
 | World Models | `topics/world-models/` | Active |
 | Reinforcement Learning | `topics/reinforcement-learning/` | Planned |
 | LLM & Agents | `topics/llm-agents/` | Planned |
-| Computer Vision | `topics/computer-vision/` | Planned |
+| Computer Vision | `topics/computer-vision/` | Active |
 
 ## Commands
 
@@ -42,7 +42,7 @@ ai-research-notes/
 │   │   └── ...
 │   ├── reinforcement-learning/ # (planned)
 │   ├── llm-agents/             # (planned)
-│   └── computer-vision/        # (planned)
+│   └── computer-vision/        # YOLO evolution & defect detection
 ├── pyproject.toml              # Shared dependencies
 └── Makefile                    # Top-level commands
 ```
@@ -51,3 +51,4 @@ ai-research-notes/
 
 Each topic has its own `CLAUDE.md` with detailed instructions. When working on a specific topic, refer to:
 - `topics/world-models/CLAUDE.md` for World Models
+- `topics/computer-vision/CLAUDE.md` for Computer Vision
