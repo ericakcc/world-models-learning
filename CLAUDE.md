@@ -13,18 +13,18 @@ A structured learning project for World Models research, progressing through 4 p
 ## Commands
 
 ```bash
-# Environment
-uv sync                          # Sync dependencies
-uv add <package>                 # Add dependency
-uv add --dev <package>           # Add dev dependency
+# Quick setup
+make setup                       # Install uv + sync dependencies
+make papers                      # Download all 6 papers from arXiv
 
 # Code quality
-uv run ruff check . --fix        # Lint and fix
-uv run ruff format .             # Format code
+make lint                        # Run ruff check --fix + format
+make test                        # Run pytest -v
+make clean                       # Remove .venv, __pycache__, etc.
 
-# Testing
-uv run pytest                    # Run all tests
-uv run pytest tests/ -v          # Verbose
+# Direct uv commands
+uv add <package>                 # Add dependency
+uv add --dev <package>           # Add dev dependency
 uv run pytest -k "test_name"     # Run specific test
 ```
 
@@ -38,6 +38,7 @@ uv run pytest -k "test_name"     # Run specific test
 - `notes/` - Reading notes organized by phase
 - `docs/` - Reference documents (Chinese)
 - `datasets/` - Training data (gitignored, large files)
+- `scripts/` - Utility scripts (download_papers.sh)
 
 ## Key Reference Repositories
 
