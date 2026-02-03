@@ -9,11 +9,11 @@ wheels/
 # Virtual environments
 .venv
 
-# Datasets (large files)
-datasets/
+# Datasets (large files, per topic)
+topics/**/datasets/
 
 # Papers (PDFs - download separately)
-papers/**/*.pdf
+topics/**/papers/**/*.pdf
 
 # IDE
 .idea/

@@ -1,7 +1,7 @@
 [project]
-name = "world-models-learning"
+name = "ai-research-notes"
 version = "0.1.0"
-description = "Add your description here"
+description = "Multi-topic ML/AI research and learning repository"
 requires-python = ">=3.12"
 dependencies = []
 
